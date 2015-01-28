@@ -12,10 +12,16 @@ set(TEST_SOURCES two_sum.cpp two_sum_test.cpp)
 
 set(TEST_SOURCES2 two_sum2.cpp two_sum2_test.cpp)
 
+set(TEST_SOURCES3 two_sum3.cpp two_sum3_test.cpp)
+
 add_executable(two_sum_test ${TEST_SOURCES})
 
 add_executable(two_sum2_test ${TEST_SOURCES2})
 
+add_executable(two_sum3_test ${TEST_SOURCES3})
+
 target_link_libraries(two_sum_test gtest_main)
 
 target_link_libraries(two_sum2_test gtest_main)
+
+target_link_libraries(two_sum3_test gtest_main)
