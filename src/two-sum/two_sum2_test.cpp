@@ -14,7 +14,7 @@ using namespace std;
 
 vector<int> twoSum(vector<int> &numbers, int target);
 
-TEST(TwoSumTestCase, Normal)
+TEST(TwoSum2TestCase, Normal)
 {
 
   int a[] = {2, 7, 11, 15};
