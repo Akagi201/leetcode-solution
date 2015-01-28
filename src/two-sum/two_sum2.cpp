@@ -1,3 +1,11 @@
+/*
+ * @file two_sum.cpp
+ * @author Akagi201
+ * @date 2015/01/28
+ *
+ * https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+ */
+
 #include <vector>
 
 using namespace std;
