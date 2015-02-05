@@ -5,3 +5,5 @@
 #
 
 add_subdirectory(two-sum)
+
+add_subdirectory(valid-palindrome)
