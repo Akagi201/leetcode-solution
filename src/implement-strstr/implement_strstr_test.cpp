@@ -20,6 +20,7 @@ TEST(StrstrTestCase, InvalidInput)
     EXPECT_EQ(-1, strStr(NULL, needle));
     EXPECT_EQ(-1, strStr(haystack, NULL));
     EXPECT_EQ(-1, strStr("haha", "hahaha"));
+    EXPECT_EQ(-1, strStr("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab"));
 }
 
 TEST(StrstrTestCase, Normal)
@@ -30,4 +31,6 @@ TEST(StrstrTestCase, Normal)
 
     EXPECT_EQ(6, strStr(haystack, needle));
     EXPECT_EQ(6, strStr(haystack2, needle));
+    EXPECT_EQ(1, strStr("mississippi", "issi"));
+    EXPECT_EQ(3, strStr("aaaba", "ba")); // off-by-one error
 }

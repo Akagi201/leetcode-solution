@@ -94,6 +94,7 @@ int strStr(char *haystack, char *needle) {
 }
 #endif
 
+#if 0
 // naive Accepted
 int strStr(char *haystack, char *needle)
 {
@@ -118,4 +119,34 @@ int strStr(char *haystack, char *needle)
     }
 
     return -1;
+}
+#endif
+
+// book's solution
+int strStr(char *haystack, char *needle)
+{
+    int index = 0;
+
+    if (!haystack || !needle) {
+        return -1;
+    }
+    if (!*needle) {
+        return 0;
+    }
+
+    for (int i = 0; ; ++i) {
+        for (int j = 0; ; ++j) {
+            if (j == strlen(needle)) {
+                return i;
+            }
+
+            if (i + j == strlen(haystack)) {
+                return -1;
+            }
+
+            if (needle[j] != haystack[i + j]) {
+                break;
+            }
+        }
+    }
 }
