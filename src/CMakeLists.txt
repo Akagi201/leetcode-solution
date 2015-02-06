@@ -7,3 +7,5 @@
 add_subdirectory(two-sum)
 
 add_subdirectory(valid-palindrome)
+
+add_subdirectory(implement-strstr)
