@@ -12,6 +12,7 @@ I use this repo to practice:
 * cpp: googletest + googlemock
 * python: pytest
 * go: go test
+* js: mocha + karma
 
 ## filename and directory naming conventions
 * filename: `aaa_bbb.<suffix>`
